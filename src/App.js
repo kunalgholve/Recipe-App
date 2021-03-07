@@ -1,6 +1,4 @@
 import './App.css';
-
-//import "./styles.css";
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
 
@@ -23,7 +21,6 @@ function App() {
     res.then((resp) => resp.json())
         .then((data) => {
         setRecipes(data.hits);
-        console.log("rec:", recipes);
       });
   };
 
